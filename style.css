@@ -1,0 +1,95 @@
+/* Modelo de caja para todos los elementos del HTML */
+* {
+  box-sizing: border-box;
+}
+
+/* Tipo de letra y color de fondo para el cuerpo del documento HTML */
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(27, 30, 38);
+}
+
+/* Estilo para el contenedor del formulario */
+.form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: rgb(35, 40, 52);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 1px rgb(158, 172, 219);
+}
+
+/* Colocación de los elementos del formulario */
+.form-group {
+  position: relative;
+}
+
+/* Color para el título del formulario */
+h2 {
+  color: rgb(158, 172, 219);
+}
+
+/* Estilo para las etiquetas para indican qué introducir en cada campo */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color:rgb(158, 172, 219);
+}
+
+/* Estilo para los campos que debe rellenar el usuario */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #ddd;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+}
+
+/* Color para los bordes de los campos que indica si son válidos */
+input[type="text"].invalid,
+input[type="email"].invalid,
+input[type="password"].invalid {
+  border-color: red;
+}
+
+input[type="text"].valid,
+input[type="email"].valid,
+input[type="password"].valid {
+  border-color: green;
+}
+
+/* Estilo para los mensajes que indican los errores en los campos */
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Estilo para el botón que envía el formulario */
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border-color: black;
+  background-color: rgb(88, 68, 255);
+  color: rgb(158, 172, 219);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Colocación del icono que indica si la respuesta es válida (superpuesto a los campos de escritura) */
+.input-icon {
+  position: absolute;
+  top: 32px;
+  right: 10px;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
